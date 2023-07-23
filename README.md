@@ -2,16 +2,16 @@
 
 # NODE_RED
 
-catch location_data
-send location_data to server
+catch location_data 👍
+send location_data to server 👍
 set timer
 
 # SERVER
 
 ** post request **
-create route to catch data
+create route to catch data 👍
 handle errors
-connect to db
+connect to db 👍
 
 ** get request **
 
@@ -21,14 +21,12 @@ connect to db
 - filter by specific timeframe for all persons
 - filter by specific timeframe for one person
 
-´´
-const filteredArray = (timeafter) => {
-const result = locationData.filter(entry => new Date(entry.last_changed_utc) > timeafter)
-return result
-}
+  const filteredArray = (timeafter) => {
+  const result = locationData.filter(entry => new Date(entry.last_changed_utc) > timeafter)
+  return result
+  }
 
-console.log(filteredArray(new Date))
-´´
+  console.log(filteredArray(new Date))
 
 ## MONGODB
 
