@@ -23,6 +23,14 @@ app.post('/', async (req, res) => {
   });
 });
 
+app.get('/', async (req, res) => {
+ 
+  res.send({
+    message: 'Thank you - API WORKING',
+
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`server listening ${PORT}`);
 });
