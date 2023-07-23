@@ -1,40 +1,40 @@
 ** TRACK MOVEMENT **
 
-# NODE_RED
+## NODE_RED
 
-catch location_data 👍
-send location_data to server 👍
-set timer
+    catch location_data 👍
+    send location_data to server 👍
+    set timer
 
-# SERVER
+## SERVER
 
-** post request **
-create route to catch data 👍
-handle errors
-connect to db 👍
+    ** post request **
 
-** get request **
+    - create route to catch data 👍
+    - handle errors
+    - connect to db 👍
 
-- get names of persons
-- get data for specific person
+    ** get request **
 
-- filter by specific timeframe for all persons
-- filter by specific timeframe for one person
+    - get names of persons
+    - get data for specific person
 
-  const filteredArray = (timeafter) => {
-  const result = locationData.filter(entry => new Date(entry.last_changed_utc) > timeafter)
-  return result
-  }
+    - filter by specific timeframe for all persons
+    - filter by specific timeframe for one person
 
-  console.log(filteredArray(new Date))
+    const filteredArray = (timeafter) => {
+    const result = locationData.filter(entry => new Date(entry.last_changed_utc) > timeafter)
+    return result
+    }
+
+    console.log(filteredArray(new Date))
 
 ## MONGODB
 
-    create collection
-    create schema
-    create model
-
-    save recieved data to db
+    - create collection 👍
+    - create schema 👍
+    - create model 👍
+    - save recieved data to db 👍
 
 ## FRONTEND
 
