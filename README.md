@@ -34,14 +34,14 @@ connect to db 👍
     create schema
     create model
 
-save recieved data to db
+    save recieved data to db
 
-# FRONTEND
+## FRONTEND
 
-- fetchdata
-- show data
-- creating input for further filtering
-- create map
-- visualize data on map
-- using opacity on points to show POI
-- using connected lines for tracking
+    - fetchdata
+    - show data
+    - creating input for further filtering
+    - create map
+    - visualize data on map
+    - using opacity on points to show POI
+    - using connected lines for tracking
