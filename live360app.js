@@ -24,10 +24,18 @@ app.post('/', async (req, res) => {
 });
 
 app.get('/', async (req, res) => {
- 
   res.send({
     message: 'Thank you - API WORKING',
+  });
+});
 
+app.get('/localizations', async (req, res) => {
+  const localizations = await Localization.find();
+  const parsedheader = await req.headers;
+  console.log(parsedheader);
+  res.send({
+    message: 'Your Data',
+    data: localizations,
   });
 });
 
