@@ -1,5 +1,11 @@
 ###TRACK MOVEMENT###
 
+## GOALS
+
+    saving the locations from live360db to a database
+    showing Heatmap of locations
+
+
 ## NODE_RED
 
     catch location_data 👍
